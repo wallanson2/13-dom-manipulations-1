@@ -1,5 +1,5 @@
 
-console.log("Are we connected?")
+console.log("Are we still connected?")
 //=========================================================================
 
 document.querySelector("#inject-html button").addEventListener('click',function(){
@@ -78,7 +78,107 @@ document.querySelector("#remove button").addEventListener('click',function(){
 
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
+  // // var squareSwap = document.querySelectorAll("#reverse-squares span")
+  // var black = "background: rgb(52, 73, 94) none repeat scroll 0% 0% / auto padding-box border-box"
+  // var purple =  "background: rgb(142, 68, 173) none repeat scroll 0% 0% / auto padding-box border-box"
+  // var red =  "background: rgb(211, 84, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+  // var spanElements = document.getElementsByTagName("span")
+  // var newArrayHolder = []
+
+
+
+
+    var kids = document.getElementById('squaresReverse').children;
+    console.log([kids])
+    for(var i = 0; i < 1; i++){
+      if (kids[i].className === 'square s3'){
+        kids[i].className = 'square s2';
+        kids[i].innerHTML = '7';
+        kids[i + 1].className = 'square s1';
+        kids[i + 1].innerHTML = '6';
+        kids[i + 2].className = 'square s2';
+        kids[i + 2].innerHTML = '5';
+        kids[i + 3].className = 'square s1';
+        kids[i + 3].innerHTML = '4';
+        kids[i + 4].className = 'square s1';
+        kids[i + 4].innerHTML = '3';
+        kids[i + 5].className = 'square s1';
+        kids[i + 5].innerHTML = '2';
+        kids[i + 6].className = 'square s3';
+        kids[i + 6].innerHTML = '1';
+      } else {
+        kids[i].className = 'square s3',
+        kids[i].innerHTML = '1';
+        kids[i + 1].className = 'square s1';
+        kids[i + 1].innerHTML = '2';
+        kids[i + 2].className = 'square s1';
+        kids[i + 2].innerHTML = '3';
+        kids[i + 3].className = 'square s1';
+        kids[i + 3].innerHTML = '4';
+        kids[i + 4].className = 'square s2';
+        kids[i + 4].innerHTML = '5';
+        kids[i + 5].className = 'square s1';
+        kids[i + 5].innerHTML = '6';
+        kids[i + 6].className = 'square s2';
+        kids[i + 6].innerHTML = '7';
+      }
+
+
+  }
+
+  // for ( var i = 0; i < spanElements.length; i += 1) {
+    // var computedStyling = window.getComputedStyle(spanElements)
+    // console.log(computedStyling.backgroundColor[i])
+
+
+    // if () {}
+    // console.log(spanElements[i])
+    // var colorCubes = computedStyling.background
+    // console.log(colorCubes.style[i] = black)
+    // newArrayHolder +=
+
+
+  // }
+    // console.log(computedStyling.style = black)
+    // console.log(colorCubes.style = black)
+  // var computedStyling = window.getComputedStyle(spanElements[i])
+  // for ( var i = 0; i < spanElements.length; i += 1) {
+  // console.log(window.getComputedStyle(squareSwap))
+    // console.log(computedStyling.background)
+    // squareSwap.style = "background: rgb(52, 73, 94) none repeat scroll 0% 0% / auto padding-box border-box"
+    // squareSwap.innerHTML = "7"
+
+    // newArrayHolder.push(squareSwap)
+
+    // console.log(newArrayHolder)
+
+
+
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 document.querySelector("#pig-latin button").addEventListener('click',function(){
   // TASK #7
