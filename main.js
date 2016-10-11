@@ -78,16 +78,7 @@ document.querySelector("#remove button").addEventListener('click',function(){
 
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
-  // // var squareSwap = document.querySelectorAll("#reverse-squares span")
-  // var black = "background: rgb(52, 73, 94) none repeat scroll 0% 0% / auto padding-box border-box"
-  // var purple =  "background: rgb(142, 68, 173) none repeat scroll 0% 0% / auto padding-box border-box"
-  // var red =  "background: rgb(211, 84, 0) none repeat scroll 0% 0% / auto padding-box border-box"
-  // var spanElements = document.getElementsByTagName("span")
-  // var newArrayHolder = []
-
-
-
-
+  //  INPUT: A div of objects with properties
     var kids = document.getElementById('squaresReverse').children;
     console.log([kids])
     for(var i = 0; i < 1; i++){
@@ -122,68 +113,148 @@ document.querySelector("#reverse-squares button").addEventListener('click',funct
         kids[i + 6].className = 'square s2';
         kids[i + 6].innerHTML = '7';
       }
-
-
+      //  OUTPUT:  Modified properties
   }
-
-  // for ( var i = 0; i < spanElements.length; i += 1) {
-    // var computedStyling = window.getComputedStyle(spanElements)
-    // console.log(computedStyling.backgroundColor[i])
-
-
-    // if () {}
-    // console.log(spanElements[i])
-    // var colorCubes = computedStyling.background
-    // console.log(colorCubes.style[i] = black)
-    // newArrayHolder +=
-
-
-  // }
-    // console.log(computedStyling.style = black)
-    // console.log(colorCubes.style = black)
-  // var computedStyling = window.getComputedStyle(spanElements[i])
-  // for ( var i = 0; i < spanElements.length; i += 1) {
-  // console.log(window.getComputedStyle(squareSwap))
-    // console.log(computedStyling.background)
-    // squareSwap.style = "background: rgb(52, 73, 94) none repeat scroll 0% 0% / auto padding-box border-box"
-    // squareSwap.innerHTML = "7"
-
-    // newArrayHolder.push(squareSwap)
-
-    // console.log(newArrayHolder)
-
-
-
-
 })
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//======================================================================
 
 document.querySelector("#pig-latin button").addEventListener('click',function(){
   // TASK #7
+  //  INPUT: A list with strings
+
+  var backwardsStrings = document.getElementById('tasks').children;
+  for ( var i = 0; i < 1; i += 1) {
+    if (backwardsStrings[i].innerHTML === 'Get grocieries'){
+      backwardsStrings[i].innerHTML = 'seireicorg teG';
+      backwardsStrings[i + 1].innerHTML = 'htab a tac eviG';
+      backwardsStrings[i + 2].innerHTML = 'mom llaC';
+      backwardsStrings[i + 3].innerHTML = 'lio rac egnahC';
+    } else {
+      backwardsStrings[i].innerHTML = 'Get grocieries';
+      backwardsStrings[i + 1].innerHTML = 'Give cat a bath';
+      backwardsStrings[i + 2].innerHTML = 'Call mom';
+      backwardsStrings[i + 3].innerHTML = 'Change car oil';
+    }
+  }
+  //  OUTPUT: Modified list -- backwards strings
 })
+
+//========================================================================
 
 document.querySelector("#cycle-image button").addEventListener('click',function(){
    //TASK #8
+   //  INPUT:
+ // console.log(imgFolder)
+  //
+  // var imgFolder = document.getElementById('city-img')
+  // // var scrAtt = imgFolder.getAttribute('src')
+  // var imgEl = imgFolder.getAttribute('src')
+  // imgEl = "/Users/homeBase1/TIY/assignments/assignment-13-dom-manipulations/images"
+  // console.log([imgEl])
+  //
+  // // for (var i = 0; i <
+  // // imgFolder.src = "./images"
+  // imgFolder.src =
+
+    // console.log(images)
+
+  // for (var i = 0; i < 10; i += 1) {
+  //   document.getElementById('city-img').src = '"./images/city-photo-"[i]".jpg"'
+  //
+  // }
+  //  var picSlideShow = document.getElementById('cityBox')
+  //  var imgStyles = window.getComputedStyle('images')
+  //  console.log([picSlideShow])
+  // var imgArray = [
+  //   'images/city-photo-1.jpg',
+  //   'images/city-photo-2.jpg',
+  //   'images/city-photo-3.jpg',
+  //   'images/city-photo-4.jpg',
+  //   'images/city-photo-5.jpg',
+  //   'images/city-photo-6.jpg',
+  //   'images/city-photo-7.jpg',
+  //   'images/city-photo-8.jpg',
+  //   'images/city-photo-9.jpg',
+  //   'images/city-photo-10.jpg'
+  // ]
+
+
+
+
+
+  // counter = 0
+  // if (counter < 10) {
+  //     document.getElementById('city-img')
+  //     // var = imgArray[counter];
+  // //     console.log(imgArray[counter])
+  //     counter = counter + 1
+  // //
+  // }
+  //
+  // console.log(counter)
+    // } else {
+    //   document.getElementById('city-img').src = imgArray[2]
+
+
+
+  //  var imgFileLength = window.images.length
+  //  console.log(imgFileLength)
+  //  for ( var i = 0; i < imgfileLength; i += 1) {
+    // var imagesLength = document.getElementById('city-img').src
+  // if( document.getElementById('city-img').src === './images/city-photo-1.jpg') {
+    // console.log(imagesLength)
+
+    // document.getElementById('city-img').src = './images/city-photo-2.jpg';
+  // }
+    //  imgArray.push(document.images[i])
+    //  console.log(imgArray)
+  //  }
+
+  // picSlideShow.innerHTML = " <img id="city-img" class="exercise-item" src="./images/city-photo-2.jpg">";
+    // picSlideShow.innerHTML = 'src='./images/city-photo-2.jpg''
+    // for (var i = 0; i < 10) {}
+  // var imgArray = document.getElementById(images)
+  // function addimage() {
+  //          var img = document.createElement("img");
+  //          img.src = "/Users/homeBase1/TIY/assignments/assignment-13-dom-manipulations/images/city-photo-2.jpg";
+  //          //optionally set a css class on the image
+  //          var class_name = "foo";
+  //          img.setAttribute("class", class_name);
+  //
+  //          document.body.appendChild(img);
+  //        }
+
+//========================  good code =============================
+    // document.getElementById('city-img').src = "./images/city-photo-2.jpg"
+//================================================================
+    // imgEl.innerHTML = "src = ./images/city-photo-2.jpg"
+
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//====================================================================
