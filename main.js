@@ -126,18 +126,9 @@ document.querySelector("#pig-latin button").addEventListener('click',function(){
   //  INPUT: A list with strings
 
   var backwardsStrings = document.getElementById('tasks').children;
-  for ( var i = 0; i < 1; i += 1) {
-    if (backwardsStrings[i].innerHTML === 'Get grocieries'){
-      backwardsStrings[i].innerHTML = 'seireicorg teG';
-      backwardsStrings[i + 1].innerHTML = 'htab a tac eviG';
-      backwardsStrings[i + 2].innerHTML = 'mom llaC';
-      backwardsStrings[i + 3].innerHTML = 'lio rac egnahC';
-    } else {
-      backwardsStrings[i].innerHTML = 'Get grocieries';
-      backwardsStrings[i + 1].innerHTML = 'Give cat a bath';
-      backwardsStrings[i + 2].innerHTML = 'Call mom';
-      backwardsStrings[i + 3].innerHTML = 'Change car oil';
-    }
+  for ( var i = 0; i < backwardsStrings.length; i += 1) {
+    var splitStrg = backwardsStrings[i].innerHTML.split('').reverse().join('')
+    backwardsStrings[i].innerHTML = splitStrg
   }
   //  OUTPUT: Modified list -- backwards strings
 })
