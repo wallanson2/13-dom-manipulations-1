@@ -79,43 +79,52 @@ document.querySelector("#remove button").addEventListener('click',function(){
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
   //  INPUT: A div of objects with properties
-    var kids = document.getElementById('squaresReverse').children;
-    console.log([kids])
-    for(var i = 0; i < 1; i++){
-      if (kids[i].className === 'square s3'){
-        kids[i].className = 'square s2';
-        kids[i].innerHTML = '7';
-        kids[i + 1].className = 'square s1';
-        kids[i + 1].innerHTML = '6';
-        kids[i + 2].className = 'square s2';
-        kids[i + 2].innerHTML = '5';
-        kids[i + 3].className = 'square s1';
-        kids[i + 3].innerHTML = '4';
-        kids[i + 4].className = 'square s1';
-        kids[i + 4].innerHTML = '3';
-        kids[i + 5].className = 'square s1';
-        kids[i + 5].innerHTML = '2';
-        kids[i + 6].className = 'square s3';
-        kids[i + 6].innerHTML = '1';
-      } else {
-        kids[i].className = 'square s3',
-        kids[i].innerHTML = '1';
-        kids[i + 1].className = 'square s1';
-        kids[i + 1].innerHTML = '2';
-        kids[i + 2].className = 'square s1';
-        kids[i + 2].innerHTML = '3';
-        kids[i + 3].className = 'square s1';
-        kids[i + 3].innerHTML = '4';
-        kids[i + 4].className = 'square s2';
-        kids[i + 4].innerHTML = '5';
-        kids[i + 5].className = 'square s1';
-        kids[i + 5].innerHTML = '6';
-        kids[i + 6].className = 'square s2';
-        kids[i + 6].innerHTML = '7';
-      }
-      //  OUTPUT:  Modified properties
+
+  var reverseSqEl = document.querySelectorAll('.square')
+  for ( var i = reverseSqEl.length - 1; i >= 0; i--) {
+    reverseSquareEl = reverseSqEl[i]
+    reverseSquareEl = reverseSqEl[i].parentNode.appendChild(reverseSquareEl)
+
   }
 })
+
+  //   var kids = document.getElementById('squaresReverse').children;
+  //   console.log([kids])
+  //   for(var i = 0; i < 1; i++){
+  //     if (kids[i].className === 'square s3'){
+  //       kids[i].className = 'square s2';
+  //       kids[i].innerHTML = '7';
+  //       kids[i + 1].className = 'square s1';
+  //       kids[i + 1].innerHTML = '6';
+  //       kids[i + 2].className = 'square s2';
+  //       kids[i + 2].innerHTML = '5';
+  //       kids[i + 3].className = 'square s1';
+  //       kids[i + 3].innerHTML = '4';
+  //       kids[i + 4].className = 'square s1';
+  //       kids[i + 4].innerHTML = '3';
+  //       kids[i + 5].className = 'square s1';
+  //       kids[i + 5].innerHTML = '2';
+  //       kids[i + 6].className = 'square s3';
+  //       kids[i + 6].innerHTML = '1';
+  //     } else {
+  //       kids[i].className = 'square s3',
+  //       kids[i].innerHTML = '1';
+  //       kids[i + 1].className = 'square s1';
+  //       kids[i + 1].innerHTML = '2';
+  //       kids[i + 2].className = 'square s1';
+  //       kids[i + 2].innerHTML = '3';
+  //       kids[i + 3].className = 'square s1';
+  //       kids[i + 3].innerHTML = '4';
+  //       kids[i + 4].className = 'square s2';
+  //       kids[i + 4].innerHTML = '5';
+  //       kids[i + 5].className = 'square s1';
+  //       kids[i + 5].innerHTML = '6';
+  //       kids[i + 6].className = 'square s2';
+  //       kids[i + 6].innerHTML = '7';
+  //     }
+  //     //  OUTPUT:  Modified properties
+  //  }
+
 
 
 
